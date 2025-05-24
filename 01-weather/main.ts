@@ -23,7 +23,7 @@ server.tool(
     {
         city: z.string().describe("The city to fetch the current weather for"),
     },
-    async ({ city }) => {
+    async ({ city }: { city: string }) => {
         const geoResult = await getCoordinates(city);
         if (geoResult.error) {
             return { content: [{ type: "text", text: geoResult.error + (geoResult.details ? ` (${geoResult.details})` : "") }] };
@@ -53,7 +53,7 @@ server.tool(
         city: z.string().describe("The city to fetch the weather forecast for"),
         days: z.number().int().min(1).max(16).describe("Number of forecast days (e.g., 1 to 16)")
     },
-    async ({ city, days }) => {
+    async ({ city, days }: { city: string; days: number }) => {
         const geoResult = await getCoordinates(city);
         if (geoResult.error) {
             return { content: [{ type: "text", text: geoResult.error + (geoResult.details ? ` (${geoResult.details})` : "") }] };
@@ -88,7 +88,7 @@ server.tool(
         city: z.string().describe("The city to fetch the hourly forecast for"),
         date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "Date must be in YYYY-MM-DD format").describe("The specific date for the forecast (YYYY-MM-DD)")
     },
-    async ({ city, date }) => {
+    async ({ city, date }: { city: string; date: string }) => {
         const geoResult = await getCoordinates(city);
         if (geoResult.error) {
             return { content: [{ type: "text", text: geoResult.error + (geoResult.details ? ` (${geoResult.details})` : "") }] };
@@ -123,7 +123,7 @@ server.tool(
     {
         city: z.string().describe("The city to fetch the air quality for")
     },
-    async ({ city }) => {
+    async ({ city }: { city: string }) => {
         const geoResult = await getCoordinates(city);
         if (geoResult.error) {
             return { content: [{ type: "text", text: geoResult.error + (geoResult.details ? ` (${geoResult.details})` : "") }] };
