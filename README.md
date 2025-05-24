@@ -65,6 +65,21 @@ After installation, the MCP server will be available for use with your GitHub Co
 
 Most servers here are designed to communicate via `stdin/stdout` using the `StdioServerTransport` from the MCP SDK, as shown in the examples.
 
+## Screenshots
+
+### Weather MCP
+
+![Get air quality](./screenshots/01-weather/get_air_quality.webp)
+![Get current weather](./screenshots/01-weather/get_current_weather.webp)
+![Get daily forecast](./screenshots/01-weather/get_daily_forecast.webp)
+![Get hourly forecast on date](./screenshots/01-weather/get_hourly_forecast_on_date.webp)
+
+### Pokemon MCP
+
+![Get pokemon details](./screenshots/02-pokemon/get_pokemon_details.webp)
+![Get move details](./screenshots/02-pokemon/get_move_details.webp)
+![Get ability details](./screenshots/02-pokemon/get_ability_details.webp)
+
 ---
 
 Happy coding, and I hope you find these MCP examples useful!
