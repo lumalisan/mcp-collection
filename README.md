@@ -1,4 +1,4 @@
-# Model Context Protocol (MCP) Server Collection /w Typescript
+# Model Context Protocol (MCP) Server Collection w/ Typescript
 
 ## 🎯 About This Collection
 Welcome to my repository of Model Context Protocol (MCP) server implementations!
@@ -8,7 +8,7 @@ This project showcases a variety of custom-built servers designed to explore and
 Feel free to explore the code, see how different MCPs are structured, and get inspired!
 
 ## ✨ What You'll Find Inside
-This collection is continuously growing. Here are some key aspects and examples of MCPs you can explore:
+Here are some key aspects and examples of MCPs you can explore:
 
 * **Diverse Service Integrations:** Working MCP server examples that connect LLMs to various useful services, including:
     * ☀️ **Weather MCP:** Provides current weather, daily/hourly forecasts, and air quality data (using the Open-Meteo API).
@@ -52,6 +52,18 @@ To get started with a specific MCP:
     }
 }
 ```
+
+<details><summary><b>Install in VS Code</b></summary>
+
+You can also install the MCP servers using the VS Code CLI:
+
+```bash
+# For VS Code
+code --add-mcp '{"name":"weather","command":"npx","args":[ "-y","tsx","[your local path to \01-weather]"]}'
+```
+
+After installation, the Playwright MCP server will be available for use with your GitHub Copilot agent in VS Code.
+</details>
 
 Most servers here are designed to communicate via `stdin/stdout` using the `StdioServerTransport` from the MCP SDK, as shown in the examples.
 
