@@ -59,10 +59,10 @@ You can also install the MCP servers using the VS Code CLI:
 
 ```bash
 # For the weather MCP server
-code --add-mcp '{"name":"weather","command":"npx","args":[ "-y","tsx","[your local path to \01-weather]"]}'
+code --add-mcp '{"name":"weather","command":"npx","args":["-y","tsx","[your local path to \01-weather]"]}'
 ```
 
-After installation, the Playwright MCP server will be available for use with your GitHub Copilot agent in VS Code.
+After installation, the MCP server will be available for use with your GitHub Copilot agent in VS Code.
 </details>
 
 Most servers here are designed to communicate via `stdin/stdout` using the `StdioServerTransport` from the MCP SDK, as shown in the examples.
