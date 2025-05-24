@@ -58,7 +58,7 @@ To get started with a specific MCP:
 You can also install the MCP servers using the VS Code CLI:
 
 ```bash
-# For VS Code
+# For the weather MCP server
 code --add-mcp '{"name":"weather","command":"npx","args":[ "-y","tsx","[your local path to \01-weather]"]}'
 ```
 
