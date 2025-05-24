@@ -1,0 +1,17 @@
+{
+  "name": "02-pokemon",
+  "version": "1.0.0",
+  "description": "Pokemon model",
+  "main": "main.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "npx @modelcontextprotocol/inspector npx -y tsx main.ts"
+  },
+  "keywords": ["modelcontextprotocol", "pokemon"],
+  "author": "Lisandro Rocha Tau",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.25.23"
+  }
+}
