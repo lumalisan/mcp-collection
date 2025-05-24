@@ -53,8 +53,7 @@ To get started with a specific MCP:
 }
 ```
 
-<details><summary><b>Install in VS Code</b></summary>
-
+### Install in VS Code
 You can also install the MCP servers using the VS Code CLI:
 
 ```bash
@@ -63,7 +62,6 @@ code --add-mcp '{"name":"weather","command":"npx","args":["-y","tsx","[your loca
 ```
 
 After installation, the MCP server will be available for use with your GitHub Copilot agent in VS Code.
-</details>
 
 Most servers here are designed to communicate via `stdin/stdout` using the `StdioServerTransport` from the MCP SDK, as shown in the examples.
 
